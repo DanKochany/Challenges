@@ -1,0 +1,60 @@
+$color-primary: #f4f4f4;
+$color-yellow: #ffff00;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: $color-primary;
+  
+}
+
+.container {
+  border: dashed;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.2em;
+}
+p {
+  padding: 1.3em;
+  font-size: 20px;
+}
+
+%bto {
+  color: $color-primary;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5em;
+
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.botao-1 {
+  @extend %bto;
+  background-color: green;
+}
+
+.botao-2 {
+  @extend %bto;
+  background-color: red;
+}
+
+.yellow {
+  @extend %bto;
+
+  background-color: darken($color-yellow, 5%);
+  color: black;
+
+}

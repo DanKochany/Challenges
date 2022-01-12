@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 215, 0,8);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.titulo {
+    text-align: center;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, black, blue);
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    background-color: rgba(243, 242, 242, 0.918);
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 7, 7, 0.55)
+}
+
+.botao {
+    padding: 10px;
+    border-radius: 2px;
+    width: 53px;
+    height: 53px;
+    font-size: 25px;
+    cursor: crosshair;
+    background-color: rgb(240, 214, 214);
+    border: none;
+    padding: 0.75rem;
+    margin: 1.5px;
+}
+
+.botao:hover {
+    background-color: rgba(255, 7, 7, 0.7);
+    border: outset;
+    border-color: cornflowerblue;
+}
+
+#visor {
+    width: 220px;
+    background-color: white;
+    margin-left: 7px;
+    text-align: right;
+    height: 25px;
+}
